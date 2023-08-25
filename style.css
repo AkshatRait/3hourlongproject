@@ -1,0 +1,116 @@
+body {
+    border-style: solid;
+    border-color: black;
+
+
+    box-sizing: border-box;
+    text-align: center;
+    background-color: azure;
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 5px 3fr;
+    grid-template-rows:1fr 0.5fr 1fr 1fr 1fr 1fr ;
+    gap:5px;
+    
+    background-color: gainsboro;
+}
+
+#first-column{
+    display: flex;
+
+    background-color: #F6F6F6;
+    grid-column: 2;
+}
+
+#first-column img{
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#todo{
+    background-color: #F9F9F9;
+    grid-column: 5;
+}
+
+#empty{
+    grid-column: 4;
+    grid-row: 1 /span 6;
+
+    background-color: black;
+}
+
+.first-btn{
+    background-color: #FF5722;
+    margin:auto;
+    grid-column: 1;
+}
+
+.second-btn{
+    background-color: #FF5722;
+    margin:auto;
+    grid-column: 2;
+}
+
+.third-btn{
+    background-color: #FF5722;
+    margin:auto;
+    grid-column: 3;
+}
+
+#todo-input{
+    grid-column: 5;
+}
+
+#lucky-number{
+    background-color: #FFC107;
+    grid-column: span 3;
+}
+
+ul{
+    grid-column: 5/6;
+    background-color: #FFF;
+    grid-row: 3/span 6;
+}
+
+#cheerleader{
+    background-color: #4CAF50;
+    color: #fff;
+    grid-column: span 3;
+}
+
+#quote{
+    background-color: #2196F3;
+    color: #fff;
+    grid-column: 2/4;
+}
+
+#click{
+    background-color: #9C27B0;
+    grid-column: 2/4 ;
+}
+
+#cartoon{
+    grid-column: 1;
+    grid-row: span 2;
+
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+button{
+    width: 10vw;
+}
+
+.cartoon{
+    max-width: 200px;
+    min-height: fit-content;
+}
+
+#cartoon h2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
