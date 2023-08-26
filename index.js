@@ -73,3 +73,7 @@ mascot.addEventListener('click', ()=>{
 quote.textContent = `"${randomQuote}"`;
     
 })
+
+//!SECTION TODO
+
+const todoInput = document.getElementById("todo-input");
